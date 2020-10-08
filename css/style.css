@@ -43,20 +43,12 @@ body{
 button{
     font-family: "raleway";
     font-weight: 700;
-    color: white;
-    background:linear-gradient(to right,hsl(176, 68%, 64%) ,hsl(198, 60%, 50%));
+    color: lightgrey;
     padding: 20px 80px;
     border: none;
     border-radius: 30px;
     cursor: pointer;
-}
-
-input{
-    padding: 20px 60px;
-    border: none;
-    border-radius: 30px;
-    color: lightgrey;
-    margin-bottom: 20px;
+    margin-right: 20px;
 }
 
 svg{
@@ -137,6 +129,11 @@ svg path{
     line-height: 150%;
     width: 50%; 
     margin:  0 auto;
+}
+
+.button{
+    color: white;
+    background:linear-gradient(to right,hsl(176, 68%, 64%) ,hsl(198, 60%, 50%));
 }
 
 
@@ -300,16 +297,6 @@ svg path{
     margin-top: 20px;
 }
 
-.action button{
-    width: 30%; 
-    padding: 20px 30px;  
-    margin-left: 20px;
-}
-
-.action input{
-    width: 450px;
-}
-
 .info{
     margin-top: 50px;
     display: flex; 
@@ -363,6 +350,10 @@ svg path{
 
 
 @media only screen and (max-width:945px){
+
+    button{
+        margin-right: 0;
+    }
 
     .navigation{
         padding: 25px;             
@@ -483,16 +474,11 @@ svg path{
         margin-top: 0;
     }
     
-    .action button{
-        width: 100%;
-        padding: 20px 80px;  
+    .button{ 
         margin-left:0px;
+        margin-top: 20px;
     }
     
-    .action input{
-        width: 100%;
-    }
-
     .info{
         display:block;  
     }
