@@ -1,0 +1,521 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: "open";
+    src: url("../fonts/OpenSans-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: "open";
+    src: url("../fonts/OpenSans-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face{
+    font-family: "raleway";
+    src: url("../fonts/Raleway-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face{
+    font-family: "raleway";
+    src: url("../fonts/Raleway-Regular.ttf");
+    font-weight: 400;
+}
+
+html{
+    font-size: 14px;
+}
+
+body{
+    background-color: hsl(218, 28%, 13%);
+    font-family: "open";
+    font-size: 400;
+    color: white;
+    height: 100vh;
+}
+
+button{
+    font-family: "raleway";
+    font-weight: 700;
+    color: white;
+    background:linear-gradient(to right,hsl(176, 68%, 64%) ,hsl(198, 60%, 50%));
+    padding: 20px 80px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+input{
+    padding: 20px 60px;
+    border: none;
+    border-radius: 30px;
+    color: lightgrey;
+    margin-bottom: 20px;
+}
+
+svg{
+    margin-right:10px ;
+}
+
+svg path{
+    fill: white;
+}
+
+.header{
+    background-color:hsl(217, 28%, 15%);
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;          
+}
+
+.navigation img{
+    width: 100px;
+    height: auto;
+}
+
+.link a {
+    text-decoration: none;
+    color: white;
+    font-family: "raleway";
+    font-weight: 400;
+}
+
+.link--margin{
+    margin: 0 25px;
+}
+
+.illustration{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding:0 30px;  
+    margin-top: 25px;
+    background-image: none;  
+}
+
+
+.illustration img{
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+}
+
+.illustration h1{
+    font-family: "raleway";
+    font-size: 700;
+    padding: 40px 30px 0 30px; 
+    width: 50%;
+}
+
+
+.intro{
+    color: white;
+    padding:50px 30px 220px 30px;
+    text-align: center;
+    background-image: url("../images/bg-curvy-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    background-color:hsl(217, 28%, 15%);
+}
+
+.intro p{
+    font-family: "raleway";
+    font-weight: 400;
+    padding: 0 110px 40px 110px ;   
+    line-height: 150%;
+    width: 50%; 
+    margin:  0 auto;
+}
+
+
+.wrap{
+    padding: 0 30px;
+    text-align: center;
+    display: flex;   
+    flex-direction: column; 
+}
+
+.wrap--box{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.box{
+    margin: 50px;
+    width: 35%;
+}
+
+.box h4{
+    font-family: "raleway";
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.box p{
+    padding: 15px 30px; 
+}
+
+.productive{
+    padding: 0 30px;
+    margin-top: 150px;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+
+.productive img{
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+}
+
+.text{
+    margin-top: 50px;
+    width: 46%;
+    margin-left: 120px;
+}
+
+.text h2{
+    font-family: "raleway";
+    font-weight: 700;
+    font-size: 1.8rem;
+    width: 50%;
+}
+
+.text p{           
+    font-size: 1.2rem;
+    padding: 20px 0;
+}
+
+
+.text a{
+    color:hsl(176, 68%, 64%);
+    text-decoration: none;
+}
+
+.text img {
+    height: 18px;
+    width: 18px;
+}
+
+.border{
+    border-bottom: 1px solid hsl(176, 68%, 64%);  ;
+    width: 27%;
+}
+
+.testimonials{
+    padding: 0 30px 380px 30px;
+    margin-top: 200px;
+}
+
+
+.testimonials img{
+    height: 30px;
+    width: 30px;
+    
+}
+
+.profile--wrap{
+    display: flex;  
+    justify-content: space-between;
+}
+
+.profile{
+    padding: 40px;
+    background-color: hsl(219, 30%, 18%);
+    border-radius: 5px;
+    width: 29%;
+}
+.profile p{
+    line-height: 150%;
+}
+
+.detail{
+    display: flex;
+    margin-top: 20px;
+}
+
+.detail img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.detail h5{
+    font-family: "raleway";
+    font-weight: 700;
+}
+
+.detail h6{
+    font-family: "open";
+    font-weight: 400;
+}
+
+.name{
+    margin-left: 10px;
+}
+
+.footer{
+    padding: 0 30px 50px 30px;
+    background-color: hsl(216, 53%, 9%);
+    font-size: 1.2rem;
+}
+
+.sign{
+    text-align: center;
+    background-color: hsl(217, 28%, 15%);
+    border-radius: 10px;
+    position: relative;
+    transform: translateY(-50%);
+    padding: 50px 0 30px 0;
+    width: 70%;  
+    margin: 0 auto;
+}
+.sign h3{
+    font-family: "raleway";
+    font-weight: 700;
+}
+
+.sign p{
+    padding: 20px 65px;  
+}
+
+.action{
+    display: flex;   
+    justify-content: center;
+    height: 55px;
+    margin-top: 20px;
+}
+
+.action button{
+    width: 30%; 
+    padding: 20px 30px;  
+    margin-left: 20px;
+}
+
+.action input{
+    width: 450px;
+}
+
+.info{
+    margin-top: 50px;
+    display: flex; 
+    justify-content: space-between; 
+}
+
+.location{
+    display: flex;
+    width: 35%; 
+}
+
+.location img{
+    height:15px;
+    width: 20px;
+}
+
+.location p{
+    padding: 0 65px 0 25px;
+}
+
+.contact{
+    display:flex;
+    margin-bottom: 15px;
+}
+
+.contact img{
+    height:auto;
+    width: 20px;
+}
+
+.contact p{
+    padding-left:25px ;
+}
+
+.more--information p{
+    margin-bottom: 15px;  
+}
+
+.more--detail p{
+    margin-bottom: 15px;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media only screen and (max-width:945px){
+
+    .navigation{
+        padding: 25px;             
+    }
+    
+    .illustration{
+        background-image: url("../images/bg-curvy-mobile.svg");
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: contain;
+    }
+
+    .illustration img{
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .illustration h1{
+        width: 100%;
+    }
+
+    .intro{
+        padding: 0 30px;
+        background-image: none;
+        background-color: hsl(218, 28%, 13%);
+    }
+
+    .intro p{
+        padding: 10px 64px 40px 64px ;   
+        width: 100%;  
+    }
+
+    .wrap{
+        display: block;
+        text-align: center;
+    }
+
+    .wrap--box{
+        display: block;
+    }
+    
+    .box{
+        width: 100%;
+        margin: 0;
+    }
+
+    .box img{
+        padding: 135px 0 35px 0;
+    }
+
+    .box p{
+        padding: 15px 50px; 
+    }
+
+
+    .productive{
+        display: block;
+    }
+
+    .productive img{
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .text{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .text h2{
+        width: 100%;
+    }
+
+    .text p{
+        padding: 10px 24px 0 0;             
+
+    }
+
+    .border{
+        width: 38%;
+    }
+
+    .border img{
+        width: 20px;
+        height: auto;
+    }
+
+    .testimonials{
+        display: block ;  
+    }
+    
+    .profile--wrap{
+        display:block;
+    }
+
+
+    .profile{
+        width: 100%;
+    }
+
+    .profile--margin{
+        margin: 30px 0;
+    }
+
+    .sign{
+        width: 100%;
+    }
+
+    .sign p{
+        padding: 35px 40px; 
+    }
+
+    .action{
+        display: block;  
+        height: 140px;
+        margin-top: 0;
+    }
+    
+    .action button{
+        width: 100%;
+        padding: 20px 80px;  
+        margin-left:0px;
+    }
+    
+    .action input{
+        width: 100%;
+    }
+
+    .info{
+        display:block;  
+    }
+    
+    .location{
+        width: 100%; 
+    }
+    
+    .contact{
+        margin-top:30px;
+        margin-bottom: 0;
+    }
+
+    .more--information{
+        margin-top: 100px;
+    }
+
+    .more--detail{
+        margin-top: 55px;
+    }
+
+    .social{
+        margin-top: 80px;
+    }
+
+}
